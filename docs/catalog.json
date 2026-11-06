@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "categories": [
+    {
+      "id": "shot-design",
+      "name": "镜头设计"
+    }
+  ],
+  "works": [
+    {
+      "id": "paper-boat",
+      "title": "纸船夜航",
+      "categoryId": "shot-design",
+      "description": "一份 15 秒原创镜头设计练习。跟随纸船穿过雨后的路面，用灯光倒影串起三个镜头。",
+      "author": {
+        "id": "oria-library",
+        "name": "ORIA 示例"
+      },
+      "coverUrl": "cover.svg",
+      "videoUrl": "preview.mp4",
+      "processUrl": "process.json",
+      "downloadUrl": "https://github.com/Shuye0216/oria-explore-library/releases/download/v0.1.0/oria-demo.zip"
+    }
+  ]
+}

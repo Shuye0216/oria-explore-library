@@ -1,0 +1,116 @@
+{
+  "canvases": [
+    {
+      "id": "paper-boat",
+      "name": "纸船夜航",
+      "nodes": [
+        {
+          "id": "brief",
+          "label": "01 · 创作设定",
+          "position": {
+            "x": 0,
+            "y": 70
+          },
+          "width": 315,
+          "height": 210,
+          "handles": [
+            {
+              "id": "in",
+              "type": "target",
+              "dataType": [
+                "VIDEO",
+                "IMAGE",
+                "STRING",
+                "FILE"
+              ],
+              "label": "视频、图片、文本、文件输入"
+            },
+            {
+              "id": "text",
+              "type": "source",
+              "dataType": "STRING",
+              "label": "文本输出"
+            }
+          ],
+          "text": "一个雨后的夜晚，一艘纸船从积水边缘启航。跟拍纸船，利用路灯倒影由冷到暖的变化引导视线。\n\n目标时长 15 秒。色彩以深蓝、暖橙和纸白为主。"
+        },
+        {
+          "id": "shots",
+          "label": "02 · 镜头设计",
+          "position": {
+            "x": 425,
+            "y": 45
+          },
+          "width": 315,
+          "height": 210,
+          "handles": [
+            {
+              "id": "in",
+              "type": "target",
+              "dataType": [
+                "VIDEO",
+                "IMAGE",
+                "STRING",
+                "FILE"
+              ],
+              "label": "视频、图片、文本、文件输入"
+            },
+            {
+              "id": "text",
+              "type": "source",
+              "dataType": "STRING",
+              "label": "文本输出"
+            }
+          ],
+          "text": "**00–04 秒**：低机位。雨滴打散倒影，纸船进入画面。\n\n**04–10 秒**：平行跟拍。纸船掠过暖橙色光带，船头反光亮起。\n\n**10–15 秒**：相机停住，纸船驶向光带尽头。"
+        },
+        {
+          "id": "review",
+          "label": "03 · 剪辑检查",
+          "position": {
+            "x": 850,
+            "y": 70
+          },
+          "width": 315,
+          "height": 210,
+          "handles": [
+            {
+              "id": "in",
+              "type": "target",
+              "dataType": [
+                "VIDEO",
+                "IMAGE",
+                "STRING",
+                "FILE"
+              ],
+              "label": "视频、图片、文本、文件输入"
+            },
+            {
+              "id": "text",
+              "type": "source",
+              "dataType": "STRING",
+              "label": "文本输出"
+            }
+          ],
+          "text": "在纸船移动方向一致时衔接前两个镜头。检查暖光过渡、船体大小和水面波纹是否连贯。\n\n末尾保留 1 秒静止画面，再结束。"
+        }
+      ],
+      "edges": [
+        {
+          "id": "step-1",
+          "source": "brief",
+          "target": "shots",
+          "sourceHandle": "text",
+          "targetHandle": "in"
+        },
+        {
+          "id": "step-2",
+          "source": "shots",
+          "target": "review",
+          "sourceHandle": "text",
+          "targetHandle": "in"
+        }
+      ]
+    }
+  ]
+}
